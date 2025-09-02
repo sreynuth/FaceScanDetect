@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScanFace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vkD-E8-mrh">
+                                <rect key="frame" x="8" y="59" width="385" height="48"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_arrow_left" translatesAutoresizingMaskIntoConstraints="NO" id="BgK-dn-VBC">
+                                        <rect key="frame" x="8" y="8" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="8lv-iY-vSN"/>
+                                            <constraint firstAttribute="height" constant="32" id="XNK-J7-rNU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="얼굴 정보 등록" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="how-sC-fwk">
+                                        <rect key="frame" x="140.66666666666666" y="13.666666666666671" width="103.66666666666666" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="how-sC-fwk" firstAttribute="centerY" secondItem="vkD-E8-mrh" secondAttribute="centerY" id="4yB-N3-OWW"/>
+                                    <constraint firstItem="BgK-dn-VBC" firstAttribute="centerY" secondItem="vkD-E8-mrh" secondAttribute="centerY" id="CmB-ra-IX9"/>
+                                    <constraint firstAttribute="height" constant="48" id="KVQ-So-z6N"/>
+                                    <constraint firstItem="BgK-dn-VBC" firstAttribute="leading" secondItem="vkD-E8-mrh" secondAttribute="leading" constant="8" id="l9c-uY-lwq"/>
+                                    <constraint firstItem="how-sC-fwk" firstAttribute="centerX" secondItem="vkD-E8-mrh" secondAttribute="centerX" id="u3l-0G-rOg"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lm-9F-5ul">
+                                <rect key="frame" x="20" y="766" width="353" height="52"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="hbL-tf-aJQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="촬영">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tqK-AI-urF">
+                                <rect key="frame" x="0.0" y="107" width="393" height="659"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Lm-9F-5ul" secondAttribute="trailing" constant="20" id="0Pg-2c-6Ql"/>
+                            <constraint firstItem="tqK-AI-urF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6AG-yN-NqF"/>
+                            <constraint firstItem="vkD-E8-mrh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6fE-Z4-CJP"/>
+                            <constraint firstItem="vkD-E8-mrh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DI1-hc-MZa"/>
+                            <constraint firstItem="tqK-AI-urF" firstAttribute="top" secondItem="vkD-E8-mrh" secondAttribute="bottom" id="PF4-cy-eu7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tqK-AI-urF" secondAttribute="trailing" id="TTJ-78-bZu"/>
+                            <constraint firstItem="vkD-E8-mrh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="dkt-uI-u54"/>
+                            <constraint firstItem="5Lm-9F-5ul" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="h3B-jz-206"/>
+                            <constraint firstItem="5Lm-9F-5ul" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qL8-7g-smd"/>
+                            <constraint firstItem="5Lm-9F-5ul" firstAttribute="top" secondItem="tqK-AI-urF" secondAttribute="bottom" id="sNO-Xa-M46"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="tqK-AI-urF" id="6YB-4V-0ab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-486.25954198473278" y="35.91549295774648"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ico_arrow_left" width="32" height="32"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

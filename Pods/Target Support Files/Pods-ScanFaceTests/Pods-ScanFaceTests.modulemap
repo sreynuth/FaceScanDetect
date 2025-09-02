@@ -1,0 +1,6 @@
+framework module Pods_ScanFaceTests {
+  umbrella header "Pods-ScanFaceTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
